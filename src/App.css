@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c5ce7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar .logo {
+  color: #fff;
+  margin-left: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.links {
+  margin-right: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+
+.navbar a:hover {
+  color: #6c5ce7;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.error-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  height: 80vh;
+}
+
+.error-page h1 {
+  color: #6c5ce7;
+  font-size: 5rem;
+  margin: 0 auto;
+}
+
+.error-page h2 {
+  color: #636e72;
+}
+
+.error-page a {
+  text-decoration: none;
+  padding: 15px 20px;
+  background-color: #6c5ce7;
   color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.error-page a:hover {
+  transform: scale(0.96);
 }
 
-.App-link {
-  color: #61dafb;
+.blog-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  width: 20%;
+  height: 40vh;
+  padding: 0 40px;
+  border: 1px solid #6c5ce7;
+
+  border-radius: 20px;
+  color: #6c5ce7;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.blog-card .card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 19px 19px 0px 0px;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-content {
+  margin-top: 120px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-content h1 {
+  font-size: 1.2rem;
+  margin: 20px auto;
+}
+
+.link {
+  text-decoration: none;
+  color: #6c5ce7;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);
+}
+
+.author-info {
+  opacity: 0.8;
+}
+
+.blog-details {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.blog-image {
+  width: 100%;
+  height: 400px;
+}
+
+article div {
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.btnDelete {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #d63031;
+  float: right;
+  margin: 20px;
+}
+
+.create-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 0 5%;
+  margin: 0px auto;
+  background-color: #f6f6f6;
+}
+
+.forms {
+  flex: 1;
+}
+
+.form {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form * {
+  margin-bottom: 10px;
+}
+
+.form *:focus {
+  outline: none;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #6c5ce7;
+  border-radius: 20px;
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 0;
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.picture {
+  margin: 20px auto;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
